@@ -1,0 +1,284 @@
+html, body, .zero {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  font-size: 1.1rem;
+}
+.layout {
+  background: url(../images/back.png) center center no-repeat fixed;
+  background-size: cover;
+  padding-bottom: 68px;
+  min-height: 100vh;
+  height: 100%;
+}
+.main {
+  padding-bottom: 70px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 1rem;
+}
+.navbar, .footer {
+  background-color: black;
+}
+.navbar {
+  background: url(../images/endgame.jpg) 190%;
+}
+.nav-img {
+  text-align: center;
+}
+#left {
+  display: flex;
+}
+#copyright {
+  color: white;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+#instagram, #facebook {
+  width: 40px;
+  height: 40px;
+}
+.page-title {
+  color: #fff;
+  text-align: center;
+}
+
+footer span {
+  margin-right: 2rem;
+}
+ ul {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+ul li {
+  padding: .5rem 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-size: 1.3rem;
+}
+ul li:hover {
+  border: 2px solid white;
+  transition: 1s ease;
+}
+ul a, .online-link {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+.active {
+  animation: pulse 3s infinite alternate;
+}
+@keyframes pulse {
+  from{
+    border: 1px solid transparent;
+  }
+  to {
+    transform: scale(1.1);
+    border: 1px solid white;
+  }
+}
+
+/* Heroes page */
+.page-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto 5rem;
+}
+.hero-card {
+  margin: 1rem;
+  border: 2px solid white;
+  width: 300px;
+}
+.hero-info {
+  color: white;
+  text-align: center;
+}
+.hero-info img, .movie-info img {
+  width: 230px;
+  height: auto;
+}
+.hidden {
+  display: none; 
+}  
+.hero-btn {
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 30px;
+  border: 1px solid #007bff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.hero-btn:hover, .topic button:hover, .main-topic button:hover {
+  cursor: pointer;
+  border: 1px solid blue;
+  transform: scale(1.06);
+  transition: 0.5s ease;
+}
+/* Heroes page end */
+
+/* Movies page start */
+.movie-card {
+  margin: 1rem;
+  width: 230px;
+}
+.movie-info img {
+  box-shadow: 0 7px 17px -8px black;
+}
+.movie-info a {
+  color: #d6d6d6;
+  text-decoration: none;
+}
+.movie-name, .message {
+  color: white;
+  font-style: italic;
+}
+
+/* Events page start */
+.topic {
+  min-height: 200px;
+  background-color: black;
+  padding: 2rem;
+  margin: 3rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.5em;
+}
+.topic:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}
+.topic-img{
+  width: 250px;
+  float: left;
+  margin: 0 2rem;
+  border-radius: 10px;
+}
+.topic-heading {
+  margin: 0;
+}
+.topic button, .main-topic button {
+  background-color: #007bff;
+  padding: 0.5rem 3rem;
+  border: 1px solid #007bff;
+  border-radius: 50px;
+  color: white;
+  font-size: 0.8em;
+  display: block;
+  clear: both;
+  position: relative;
+  left: 75%;
+}
+.other-news {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+.other-news a {
+  color: white;
+  font-style: oblique;
+}
+/* Events page end */
+
+/* News-detail pages start*/
+.topic-head-img img, .topic-details img{
+  width: 100%;
+}
+.layout-detail {
+  padding-bottom: 68px;
+  background-color: #fafafa;
+  height: 120%;
+}
+.topic-details {
+  width: 60%;
+  margin: 2em 0;
+}
+.topic-details h1 {
+  font-size: 2em;
+}
+.details-title {
+  text-align: center;
+}
+.details-page {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.details-page aside {
+  border-left: 3px solid grey;
+  padding: 2em 4em;
+}
+.ads {
+  height: 100%;
+  margin-top: 2em;
+}
+/* News-detail pages end */
+
+/* Main page start */
+.slider {
+  width: 80vw;
+  margin: 0 auto;
+  height: 600px;
+}
+.slider-wrapper {
+	width: 100%;
+	height: 600px;
+}
+.slide {
+	width: 100%;
+	height: 100%;
+  border-radius: 20px;
+  border-top: 3px solid #382938;
+  transform: perspective(1900px) rotateY(10deg);
+  transform-origin: top;
+}
+.slider-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: -18em 4em 0 2em;
+}
+.slider-nav button {
+  z-index: 1;
+  background-color: transparent;
+  border: 0;
+}
+.slider-nav button:hover {
+  cursor: pointer;
+}
+.slide-info {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: -2em;
+  position: relative;
+  font-family: cursive;
+}
+.main-title {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+.main-topic {
+  min-height: 200px;
+  background-color: white;
+  padding: 2rem;
+  margin: 3rem 5rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 30px;
+  font-size: 1.5em;
+}
+/* Main page end */

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/marvel.png">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/media.css">
+  <script src="scripts/main.js"></script>
+  <title>Marvel Cinematic Universe</title>
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="layout">
+      <div class="main">
+        <header class="navbar">
+          <div class="nav-img">
+            <img src="images/marvel.png" id="left" alt="logo">
+            <img src="images/marvel-logo.png" width="200" class="zero" alt="marvel logo">
+            <hr style="background-color: grey; color: grey; width: 95vw; height: 2px; border: 0;">
+          </div>
+          <ul class="menu zero">
+            <a href="">
+              <li class="active">Main</li>
+            </a>
+            <a href="Events.html">
+              <li>Events</li>
+            </a>
+            <a href="Heroes.html">
+              <li>Heroes</li>
+            </a>
+            <a href="Movies.html">
+              <li>Movies</li>
+            </a>
+          </ul>
+        </header>
+        <section class="main-page-content">
+
+          <div class="slider">
+            <div class="slider-wrapper">
+              <a href="" class="link-of-slide" onclick="openSlide()"><img src="" alt="First" class="slide" name="slide"></a>
+              <h2 class="slide-info"></h2>
+            </div>
+            <div class="slider-nav">
+              <button onclick="i >= 1 ? i-- : i=2" type="button" class="slider-previous"><img src="images/previous.png" width="100" alt="icon previous"></button>
+              <button onclick="(i < images.length - 8) ? i++ : i=0" type="button" class="slider-next"><img src="images/next.png" width="100" alt="icon next"></button>
+            </div>
+          </div>
+
+          <h1 class="main-title">The Latest</h1>
+          <hr style="background-color: #f2d2d9; height: 2px; border: 0; width: 50%;">
+
+          <article class="main-topic">
+            <img src="images/captain-marvel-topic.png" alt="captain marvel poster" class="topic-img" draggable="false">
+            <h2 class="topic-heading">All the Times the MCU's Carol Danvers Paid Tribute to the Captain Marvel Comics</h2>
+            <p class="topic-info">See Captain Marvel's looks shine from the comics to the big screen!</p>
+            <button onclick="openTopic('Topic-captain-marvel.html')">Read article</button>
+          </article>
+          <article class="main-topic">
+            <img src="images/movies-poster.jpg" alt="captain marvel poster" class="topic-img" draggable="false">
+            <h2 class="topic-heading">New Films Are Coming!</h2>
+            <p class="topic-info">See what films Has Marvel Cinematic Universe prepared for US!</p>
+            <button onclick="openTopic('Movies.html')">Go to see</button>
+          </article>
+          <article class="main-topic">
+            <img src="images/heroes-poster.jpg" alt="captain marvel poster" class="topic-img" draggable="false">
+            <h2 class="topic-heading">Read more about your favorite heroes!</h2>
+            <p class="topic-info">Detailed description of many Marvel Cinematic Universe heroes are waiting for you!</p>
+            <button onclick="openTopic('Heroes.html')">Read Now</button>
+          </article>
+        </section>
+      </div>    
+      <footer class="footer">
+        <ul class="sitemap zero">
+          <a href="">
+            <li class="active">Main</li>
+          </a>
+          <a href="Events.html">
+            <li>Events</li>
+          </a>
+          <a href="Heroes.html">
+            <li>Heroes</li>
+          </a>
+          <a href="Movies.html">
+            <li>Movies</li>
+          </a>
+        </ul>
+        <div class="icons">  
+          <p id="copyright">&copy; 2022</p>
+          <span>
+            <a href="https://www.instagram.com/marvel/"><img id="instagram" src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.facebook.com/Marvel/"><img id="facebook" src="images/facebook.png" alt="facebook icon"></a>
+          </span>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
+

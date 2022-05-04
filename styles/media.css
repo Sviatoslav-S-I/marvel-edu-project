@@ -1,0 +1,73 @@
+@media (max-width: 900px)  {
+  .topic button, .main-topic button {
+    left: 35%;
+  }
+}
+@media (max-width: 400px)  {
+  /* Common Layout */
+  :root, body {
+    font-size: 14px;
+  }
+  ul li {
+    padding: .4rem 1rem;
+  }
+  footer span {
+    margin-right: 0;
+  }
+  .message {
+    margin: auto 1rem;
+  }
+  /* Page content */
+  .slider {
+    width: 98vw;
+    margin: 0 auto;
+    height: 250px;
+  }
+  .slider-wrapper {
+    width: 100%;
+    height: 250px;
+  }
+  .slider-nav {
+    margin: -10em -1.5em 0;
+  }
+  .slider-nav img {
+    width: 50%;
+  }
+  .slider-nav {
+    margin-left: 0.5em;
+    width: 95%;
+    justify-self: center;
+  }
+  .main-topic {
+    margin: 2em;
+    font-size: 1.3em;
+  }
+  .topic button, .main-topic button {
+    left: 20%;
+  }
+  .topic-img {
+    margin: auto;
+  }
+  /* News details */
+  .ads {
+    display: none;
+  }
+  .topic-details {
+    width: 90%;
+    margin: 1em 0;
+    font-size: 1.3rem;
+    line-height: 2em;
+  }
+  /* Heroes page */
+  .hero-card, .movie-card {
+    font-size: 1.5em;
+    
+  }
+  .hero-info img, .movie-info img {
+    width: 90%;
+    height: auto;
+  }
+  .page-content {
+    margin: auto 1rem;
+  }
+}
